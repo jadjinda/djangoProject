@@ -63,4 +63,4 @@ def get_one(request, id):
 def delete(request, id):
     budget = Budget.objects.get(id=id)
     budget.delete()
-    return Response("Dette supprimer !!!")
+    return Response("Budget supprimer !!!")
